@@ -1,0 +1,16 @@
+<form action="#" method="GET">
+	<h2>Form Resgister</h2>
+	Masukan Username : <input type="text" name="username" value=""><br><br>
+	Masukan email : <input type="email" name="email" value=""><br><br>
+	Masukan Password : <input type="Password" name="Password" value=""><br><br>
+	<input type="submit" value="Submit" name="submit">
+</form>
+
+<?php
+
+	if($_GET){
+		echo "username : ".$_GET['username']."<br>";
+		echo "Email : ".$_GET['email']."<br>";
+		echo "Password : ".$_GET['Password']."<br>";
+	}
+?>
